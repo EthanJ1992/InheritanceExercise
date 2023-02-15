@@ -28,12 +28,36 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            Bird myBird= new Bird();
+            myBird.CanFly = true;
+            myBird.EatsMeat = true;
+            myBird.ears = 0;
+            myBird.IsSmall = true;
+
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+            Reptile myReptile = new Reptile();
+            myReptile.HasShell = true;
+            myReptile.LivesInWater = true;
+            myReptile.IsLarge = true;
+            myReptile.legs = 0;
+            Console.WriteLine("Properties of reptile");
+            Console.WriteLine(myReptile.HasShell);
+            Console.WriteLine(myReptile.LivesInWater);
+            Console.WriteLine(myReptile.IsLarge);
+            Console.WriteLine(myReptile.legs);
+            Console.WriteLine();
+            Console.WriteLine("Properties of bird");
+            Console.WriteLine(myBird.eatsMeat);
+            Console.WriteLine(myBird.CanFly);
+            Console.WriteLine(myBird.ears);
+            Console.WriteLine(myBird.IsSmall);
+
         }
+        
     }
 }
